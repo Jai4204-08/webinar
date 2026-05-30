@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Francois+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Francois+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Francois One", sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.notification_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  font-family: "Play", sans-serif;
+  max-height: 50px;
+  background-color: rgba(255, 0, 0, 0.7);
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+.notification_container img {
+  height: 50px;
+  width: 50px;
+}
+.notification_container h3 {
+  font-size: 22px;
+}
+
+.notification_container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.notification_container div span {
+  background-color: rgba(218, 187, 203, 0.8);
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+}
+.notification_container div span h5 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 0px;
+}
+.main_section_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  background-color: #0a1628;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  opacity: 1;
+
+  min-height: 500px;
+  padding: 120px 0px;
+}
+
+.limited_container {
+  display: flex;
+  gap: 10px;
+
+  background-color: rgba(37, 229, 23, 1);
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  animation-name: box_shadow;
+  animation-duration: 3s;
+  animation-delay: 3s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes box_shadow {
+  from {
+  }
+  to {
+    box-shadow: 2px 2px 20px 3px lightgreen;
+  }
+}
+.limited_container > i {
+  font-size: 14px;
+  font-weight: 100;
+}
+.limited_container > p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.main_section_container h1 {
+  font-size: 60px;
+
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Roboto", sans-serif;
+}
+.main_section_container h1 span {
+  background-image: linear-gradient(
+    to right,
+    rgb(13, 232, 89) 20%,
+    rgb(15, 105, 209) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  background-size: cover;
+  font-size: 90px;
+}
+
+.main_section_container > p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  max-width: 800px;
+  min-width: 300px;
+}
+.main_section_container > p span {
+  color: rgba(0, 83, 172, 0.8);
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.class_detail_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 20px 20px;
+  animation-name: class_details;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transition: all 2s;
+}
+
+@keyframes class_details {
+  from {
+    opacity: 0.78;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.class_detail_container div {
+  background-color: rgba(2, 4, 46, 0.9);
+
+  height: 150px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: rgba(12, 239, 50, 0.81);
+  font-family: "Roboto", sans-serif;
+  border-radius: 15px;
+}
+
+.class_detail_container div i {
+  font-size: 32px;
+}
+.class_detail_container div h6 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.class_detail_container div p {
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.detail_shadow_1 {
+  box-shadow: 2px 2px 8px 8px rgba(48, 180, 41, 0.43);
+}
+
+.detail_shadow_2 {
+  box-shadow: 2px 2px 8px 8px rgba(19, 174, 183, 0.42);
+}
+.detail_shadow_3 {
+  box-shadow: 2px 2px 8px 8px rgba(148, 10, 199, 0.42);
+}
+.detail_shadow_4 {
+  box-shadow: 2px 2px 8px 8px rgba(19, 175, 11, 0.442);
+}
